@@ -1,21 +1,21 @@
 Link Conda to RStudio
 #####################
 
-Accessing RStudio on Rockfish Using R from a Conda Environment
-*****************************************************************
+Accessing RStudio on Cluster One Using R from a Conda Environment
+*******************************************************************
 
-This tutorial guides you through launching **RStudio Server** on Rockfish using **R installed inside a Conda environment**.
+This tutorial guides you through launching **RStudio Server** on Cluster One using **R installed inside a Conda environment**.
 
-Connect to Rockfish (Login Node)
+Connect to Cluster One (Login Node)
 ********************************
 
 Open a terminal and run:
 
 .. code-block:: bash
 
-   ssh YourUserID@login.rockfish.jhu.edu
+   ssh YourUserID@login.cluster one.jhu.edu
 
-Enter your Rockfish password when prompted.
+Enter your Cluster One password when prompted.
 
 Create a Module for Your Conda Environment
 **************************************************
@@ -97,7 +97,7 @@ Inside the file:
 
       export R_LIBS_USER=/home/YOUR_USERNAME/.conda/envs/my_conda_env/lib/R/library
 
-Replace ``YOUR_USERNAME`` with your Rockfish username and ``my_conda_env`` with your Conda environment name.
+Replace ``YOUR_USERNAME`` with your Cluster One username and ``my_conda_env`` with your Conda environment name.
 
 **Save and exit:**
 
@@ -165,11 +165,11 @@ Inside the file, you’ll find two important things:
 Set Up the SSH Tunnel (Local Machine)
 **********************************************
 
-On your local terminal (not logged into Rockfish), run:
+On your local terminal (not logged into Cluster One), run:
 
 .. code-block:: bash
 
-   ssh -N -L <PORT>:<node>:<PORT> YourUserID@login.rockfish.jhu.edu
+   ssh -N -L <PORT>:<node>:<PORT> YourUserID@login.cluster one.jhu.edu
 
 Replace values accordingly. You’ll be prompted for your password — enter it and leave this terminal open.
 
@@ -182,4 +182,4 @@ From the ``.out`` file, copy the URL starting with:
 
    http://localhost:<PORT>/...
 
-Paste it into your web browser and log in with your Rockfish credentials.
+Paste it into your web browser and log in with your Cluster One credentials.

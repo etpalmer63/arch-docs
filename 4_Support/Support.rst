@@ -1,14 +1,14 @@
 Support
 #######
 
-This page explains how to get help with Rockfish, where to find training, and how to open a ticket.
+This page explains how to get help with Cluster One, where to find training, and how to open a ticket.
 
 Open a Ticket
 *************
 
 For support, email:
 
-- For Rockfish-specific issues: `help@rockfish.jhu.edu <mailto:help@rockfish.jhu.edu>`__
+- For Cluster One-specific issues: `help@cluster one.jhu.edu <mailto:help@cluster one.jhu.edu>`__
 - For general ARCH support: `help@arch.jhu.edu <mailto:help@arch.jhu.edu>`__
 
 Please include:

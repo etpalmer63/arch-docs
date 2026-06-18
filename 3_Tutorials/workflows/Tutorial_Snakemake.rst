@@ -182,7 +182,7 @@ Cutadapt finds and removes adapter sequences, primers, poly-A tails and other ty
 
   module load snakemake/7.6.0
 
-  # Syntax to run it on Rockfish cluster
+  # Syntax to run it on Cluster One cluster
   snakemake --jobs 101 --latency-wait 240 --cluster 'sbatch --parsable --distribution=arbitrary' --snakefile ../_h/snakemake.slurm.script
 
 So, we need create a script to perform the rev_comp_seq. Given a DNA sequence in string object, it will return its reverse.
@@ -426,7 +426,7 @@ Burrows-Wheeler Alignment Tool
 
   module load snakemake/7.6.0
 
-  # Syntax to run it on Rockfish cluster
+  # Syntax to run it on Cluster One cluster
   snakemake --jobs 101 --latency-wait 240 --cluster 'sbatch --parsable --distribution=arbitrary' --snakefile ../_h/snakemake.slurm.script
 
 bwamem snakemake.slurm.script
@@ -512,7 +512,7 @@ Remove duplicates
 
   module load snakemake/7.6.0
 
-  # Syntax to run it on Rockfish cluster
+  # Syntax to run it on Cluster One cluster
   snakemake --jobs 101 --latency-wait 240 --cluster 'sbatch --parsable --distribution=arbitrary' --snakefile ../_h/snakemake.slurm.script
 
 rmdup snakemake.slurm.script
@@ -587,7 +587,7 @@ Add tags
 
   module load snakemake/7.6.0
 
-  # Syntax to run it on Rockfish cluster
+  # Syntax to run it on Cluster One cluster
   snakemake --jobs 101 --latency-wait 240 --cluster 'sbatch --parsable --distribution=arbitrary' --snakefile ../_h/snakemake.slurm.script
 
 tags snakemake.slurm.script
@@ -679,7 +679,7 @@ Tabix
 
   module load snakemake/7.6.0
 
-  # Syntax to run it on Rockfish cluster
+  # Syntax to run it on Cluster One cluster
   snakemake --jobs 101 --latency-wait 240 --cluster 'sbatch --parsable --distribution=arbitrary' --snakefile ../_h/snakemake.slurm.script
 
 tabix snakemake.slurm.script

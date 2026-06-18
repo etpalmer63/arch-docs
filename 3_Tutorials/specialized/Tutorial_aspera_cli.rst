@@ -1,7 +1,7 @@
 Aspera CLI
 ###########
 
-This guide walks you through installing, configuring, and using the **Aspera Command Line Interface (ascli)** on Rockfish to download files from the JHG Aspera server.
+This guide walks you through installing, configuring, and using the **Aspera Command Line Interface (ascli)** on Cluster One to download files from the JHG Aspera server.
 
 
 Start an Interactive Session (Optional)

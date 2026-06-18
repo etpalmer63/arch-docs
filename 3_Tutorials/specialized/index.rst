@@ -1,7 +1,7 @@
 Specialized Applications
 =========================
 
-Rockfish supports a variety of specialized scientific and data transfer tools that extend beyond traditional batch computing workflows.
+Cluster One supports a variety of specialized scientific and data transfer tools that extend beyond traditional batch computing workflows.
 
 This section provides targeted guides for installing, configuring, and running advanced applications:
 

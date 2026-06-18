@@ -1,13 +1,13 @@
 Open OnDemand
 ##############
 
-Open OnDemand (`OOD`_) is an NSF-funded open-source HPC portal. It is a way for all our users to access the Rockfish cluster HPC resources via a web interface. It is a web-portal that provides a shell, file browser, and graphical interface for applications such as IGV, Matlab, ParaView, Jupyter and RStudio Server, etc.
+Open OnDemand (`OOD`_) is an NSF-funded open-source HPC portal. It is a way for all our users to access the Cluster One cluster HPC resources via a web interface. It is a web-portal that provides a shell, file browser, and graphical interface for applications such as IGV, Matlab, ParaView, Jupyter and RStudio Server, etc.
 
-.. _OOD: https://portal.rockfish.jhu.edu
+.. _OOD: https://portal.cluster one.jhu.edu
 
 Access Requirements
 ***********************
-- A valid **Rockfish account**
+- A valid **Cluster One account**
 - A connection to the **campus network or VPN**  
   For help connecting to the VPN, see :doc:`Connecting to the JHU VPN <../../2_Common_Tasks/JHU_VPN>`.
 
@@ -25,7 +25,7 @@ The top navigation bar includes:
 - **Apps** – A listing of pinned applications.
 - **Files** – Upload, download, and manage files in your home directory.  
 - **Jobs** – View active jobs and the job composer tool.
-- **Clusters** – Shell access to Rockfish login nodes.
+- **Clusters** – Shell access to Cluster One login nodes.
 - **Interactive Apps** – Launch graphical sessions
 - **My Interactive Sessions** – A listing of current sessions
 
@@ -85,11 +85,11 @@ GPU specification is optional for the partitions that have them.
 
 |ood12|
 
- :guilabel:`Defq` Standard Compute these are standard HPC machines. Rockfish has nodes with 48 cores and 192 GB of memory. All compute nodes have 192 GB of RAM. Chosing "defq" as the node type will decrease your wait time.
+ :guilabel:`Defq` Standard Compute these are standard HPC machines. Cluster One has nodes with 48 cores and 192 GB of memory. All compute nodes have 192 GB of RAM. Chosing "defq" as the node type will decrease your wait time.
 
- :guilabel:`Bigmem` Large Memory these are HPC machines with very large amounts of memory. Rockfish has also bigmem nodes with 48 cores and 1.5 TB of RAM.
+ :guilabel:`Bigmem` Large Memory these are HPC machines with very large amounts of memory. Cluster One has also bigmem nodes with 48 cores and 1.5 TB of RAM.
 
- :guilabel:`GPU` these are HPC machines with GPUs. Rockfish has nodes with 4 NVIDIA Tesla `A100`_ GPU and NVIDIA Tesla `V100`_ GPUs.
+ :guilabel:`GPU` these are HPC machines with GPUs. Cluster One has nodes with 4 NVIDIA Tesla `A100`_ GPU and NVIDIA Tesla `V100`_ GPUs.
 
 They have the same CPU and memory characteristics of standard compute.
 
@@ -105,7 +105,7 @@ You can use ipkernel and add multiple envs and select it inside Jupyter, just fo
 
 |ood14|
 
-In a terminal console on Rockfish cluster run these commands:
+In a terminal console on Cluster One cluster run these commands:
 
 .. code-block:: console
 
@@ -145,7 +145,7 @@ Bad Request
 
  * Message : Requested resource does not exist.
 
- **Solution** : Enter URL https://portal.rockfish.jhu.edu/
+ **Solution** : Enter URL https://portal.cluster one.jhu.edu/
 
 
 .. |ood1| image:: ../../images/ood1.png

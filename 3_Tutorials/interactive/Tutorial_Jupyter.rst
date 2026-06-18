@@ -1,8 +1,8 @@
-JupyterLab on Rockfish
+JupyterLab on Cluster One
 ######################
 
 JupyterLab is the modern, web-based interface for Jupyter notebooks,
-code and data.  On Rockfish you can start it in **two ways**:
+code and data.  On Cluster One you can start it in **two ways**:
 
 * **Graphical** – through the Open OnDemand (OOD) web portal.  
 * **Command-line** – with the helper script ``jupyterlab.sh`` (creates a SLURM job).
@@ -19,8 +19,8 @@ Method 1 – Open OnDemand portal
 *******************************
 
 1. **Connect to the Hopkins VPN** – the portal is JHU-internal.  
-2. Point your browser to `https://portal.rockfish.jhu.edu`.  
-3. **Log in** with your Rockfish username / password.  
+2. Point your browser to `https://portal.cluster one.jhu.edu`.  
+3. **Log in** with your Cluster One username / password.  
 4. Click the **Jupyter Server** tile on the dashboard.  
 5. Pick your resources  
 
@@ -43,8 +43,8 @@ prefer the shell).
 
 .. code-block:: bash
 
-   # 1. SSH to Rockfish
-   ssh <YourUserID>@login.rockfish.jhu.edu
+   # 1. SSH to Cluster One
+   ssh <YourUserID>@login.cluster one.jhu.edu
 
    # 2. Generate a Slurm batch script with desired resources
    jupyterlab.sh -n 1 -c 2 -m 8G -t 4:00:00 -p defq -e <you>@jhu.edu
@@ -57,7 +57,7 @@ prefer the shell).
    cat Jupyter_lab.job.<JOBID>.login
 
    # 5. On *your laptop*, create the SSH tunnel it shows, e.g.
-   ssh -N -L 8888:node123:8888 <YourUserID>@login.rockfish.jhu.edu
+   ssh -N -L 8888:node123:8888 <YourUserID>@login.cluster one.jhu.edu
 
    # 6. Paste http://localhost:8888/?token=… into a browser → JupyterLab!
 
@@ -121,7 +121,7 @@ Parameter reference
 Partition cheatsheet
 --------------------
 
-For available Rockfish partitions, see: :doc:`../../1_Clusters/Rockfish/3_Slurm/Partitions`
+For available Cluster One partitions, see: :doc:`../../1_Clusters/Cluster One/3_Slurm/Partitions`
 
 
 Adding extra Python / Conda environments
@@ -157,6 +157,6 @@ Troubleshooting
 * **Can’t open URL** – ensure the SSH tunnel is running on your laptop and that you’re browsing `http://localhost:<port>`.  
 * **“Address already in use”** – change the local port in the tunnel (e.g. ``-L 8899:…``).  
 * **Need GPU** – specify ``-g <n> -p a100 -a <PI-account>_gpu`` in the helper.  
-* **First-time password prompts twice** – the script validates credentials before generating the batch file; just enter the same Rockfish password.
+* **First-time password prompts twice** – the script validates credentials before generating the batch file; just enter the same Cluster One password.
 
-Questions?  E-mail **help@rockfish.jhu.edu**.
+Questions?  E-mail **help@cluster one.jhu.edu**.

@@ -27,8 +27,7 @@ Use an interactive session (``interact``) or submit a batch job for anything res
 
 For large file transfers, always use **Globus** instead of ``rsync`` or ``cp``. You can find more information about using Globus by visiting:
 
-- See the :doc:`File Transfers for Rockfish <../1_Clusters/Rockfish/2_Navigating/File_Transfers>`
-- See the :doc:`File Transfers for DSAI <../1_Clusters/DSAI/2_Navigating/File_Transfers>`
+- See the :doc:`File Transfers <../1_Clusters/Cluster_One/2_Navigating/File_Transfers>`
 
 
 Allowed on Login Nodes
@@ -46,10 +45,9 @@ Allowed on Login Nodes
 Accounts and Allocations
 *************************
 
-PIs create and manage projects via the **Coldfront Portal**. You can find more information about allocations by visiting: 
+PIs create and manage projects via the **Arch Portal**. You can find more information about allocations by visiting:
 
-- :doc:`Allocations page for Rockfish<../1_Clusters/Rockfish/4_Coldfront/AllocationCreate>`
-- :doc:`Allocations page for DSAI<../1_Clusters/DSAI/Allocation>`
+- :doc:`Accounting portal <../1_Clusters/Cluster_One/4_Arch_Portal/index>`
 
 
 Acceptance of Terms
@@ -80,12 +78,4 @@ Usage Policy
 Publications
 *************
 
-Any publications using Rockfish resources must include an acknowledgment:
-
-.. code-block:: text
-
-   This work was carried out at the Advanced Research Computing at Hopkins (ARCH) 
-   core facility (https://rockfish.jhu.edu), which is supported by the National 
-   Science Foundation (NSF) grant number OAC1920103.
-
-PIs are responsible for uploading associated publications to the Coldfront portals in accordance with proposal guidelines.
+Any publications using ARCH cluster resources must include an acknowledgment:\n\n.. code-block:: text\n\n   This work was carried out at the Advanced Research Computing at Hopkins (ARCH) \n   core facility (https://www.arch.jhu.edu), which is supported by the National \n   Science Foundation (NSF) grant number OAC1920103.\n\nPIs are responsible for uploading associated publications to the Arch Portal in accordance with proposal guidelines.

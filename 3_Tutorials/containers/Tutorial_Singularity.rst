@@ -7,7 +7,7 @@ Singularity container
    :target: https://singularity-user-docs.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
-This tutorials will allow you to run `Singularity`_ containers on computers where you do not have root (administrative) privileges, like the Rockfish cluster at ARCH.
+This tutorials will allow you to run `Singularity`_ containers on computers where you do not have root (administrative) privileges, like the Cluster One cluster at ARCH.
 
 A container allows you to put an application and all of its dependencies in a single package. Ensure portability and reproducibility of all dependency packages of an application.
 Here are some examples of things you can do with containers:
@@ -70,7 +70,7 @@ Now as a root user inside the container. Note also the addition of the ``--writa
 
 .. _fakeroot_option:
 .. warning::
-   The ``--fakeroot`` option provided in Singularity version 3.6.x (for use with the singularity ``build``, ``shell``, and ``exec`` commands) is not supported on Rockfish systems for security reasons.
+   The ``--fakeroot`` option provided in Singularity version 3.6.x (for use with the singularity ``build``, ``shell``, and ``exec`` commands) is not supported on Cluster One systems for security reasons.
 
 How to build a Singularity Image from Docker Hub
 ************************************************
@@ -85,9 +85,9 @@ Docker images, opening up access to a large number of existing container images 
   [userid@singularity ~]$ singularity pull docker://ubuntu:latest
   [userid@singularity ~]$ singularity shell ubuntu_latest.sif
 
-However, you will not be able to change this image on Rockfish cluster, because there is no partition SIF writable, see :ref:`fakeroot option <fakeroot_option>`.
+However, you will not be able to change this image on Cluster One cluster, because there is no partition SIF writable, see :ref:`fakeroot option <fakeroot_option>`.
 
-We will prepare an image using `Docker container`_, and make it available on `Docker Hub`_ and then an administrator will create a Singularity container to run it on Rockfish.
+We will prepare an image using `Docker container`_, and make it available on `Docker Hub`_ and then an administrator will create a Singularity container to run it on Cluster One.
 
 In order to build the application, we need to use a `Docker Desktop`_. Then, we will generate a Dockerfile to create `Nanopolish`_ application as an example. The Nanopolish is a software package for signal-level analysis of Oxford Nanopore sequencing data.
 
@@ -247,11 +247,11 @@ Tag an image referenced by ID.
   REPOSITORY                               TAG               IMAGE ID       CREATED          SIZE
   <none>                                   <none>            540135da7ceb   47 minutes ago   1.96GB
 
-  [userid@local ~]$ docker tag 540135da7ceb archrockfish/nanopolish:0.13.3
+  [userid@local ~]$ docker tag 540135da7ceb archcluster one/nanopolish:0.13.3
 
   [userid@local ~]$ docker image ls
   REPOSITORY                               TAG               IMAGE ID       CREATED        SIZE
-  archrockfish/nanopolish                  0.13.3            540135da7ceb   49 minutes ago   1.96GB
+  archcluster one/nanopolish                  0.13.3            540135da7ceb   49 minutes ago   1.96GB
 
 4. Run a command in a new container
 """""""""""""""""""""""""""""""""""""
@@ -273,12 +273,12 @@ or you can Run it will create a container named nanopolish using ``REPOSITORY``,
 
 .. code-block:: console
 
-  [userid@local ~]$ docker run --name nanopolish -it archrockfish/nanopolish:0.13.3 bash
+  [userid@local ~]$ docker run --name nanopolish -it archcluster one/nanopolish:0.13.3 bash
   root@0c192de0b227:/#
 
   [userid@local ~]$ docker ps --all
   CONTAINER ID   IMAGE                            COMMAND   CREATED         STATUS          PORTS     NAMES
-  0c192de0b227   archrockfish/nanopolish:0.13.3   "bash"    3 minutes ago   Up 44 seconds             nanopolish
+  0c192de0b227   archcluster one/nanopolish:0.13.3   "bash"    3 minutes ago   Up 44 seconds             nanopolish
 
 5. Start one or more stopped containers
 """""""""""""""""""""""""""""""""""""""
@@ -313,7 +313,7 @@ First, start a container (``step 5``), or keep the container running (``step 4``
   nanopolish
   or simply choose a different name for the new container.
 
-  [userid@local ~]$ docker run --name nanopolish_local -dit archrockfish/nanopolish:0.13.3
+  [userid@local ~]$ docker run --name nanopolish_local -dit archcluster one/nanopolish:0.13.3
   a3dcaa7760906861250329dca37b01f79caec10310e1bc37b7fdf6f341de5d27
   Then, execute an interactive bash shell on the new container.
 
@@ -330,9 +330,9 @@ First, start a container (``step 5``), or keep the container running (``step 4``
 
   [userid@local ~]$ docker ps -all
   CONTAINER ID   IMAGE                            COMMAND   CREATED          STATUS                      PORTS     NAMES
-  a3dcaa776090   archrockfish/nanopolish:0.13.3   "bash"    18 seconds ago   Exited (0) 14 seconds ago             nanopolish_local
+  a3dcaa776090   archcluster one/nanopolish:0.13.3   "bash"    18 seconds ago   Exited (0) 14 seconds ago             nanopolish_local
 
-  [userid@local ~]$  docker commit a3dcaa776090 archrockfish/nanopolish:0.13.3
+  [userid@local ~]$  docker commit a3dcaa776090 archcluster one/nanopolish:0.13.3
   sha256:b379b32916535b146b1fce63a14fade2cdf60bbaacf36625732cec379e03dd96
 
   [userid@local ~]$ docker inspect -f "{{ .Config.Env }}" a3dcaa776090
@@ -340,7 +340,7 @@ First, start a container (``step 5``), or keep the container running (``step 4``
 
   [userid@local ~]$ docker image ls
   REPOSITORY                               TAG               IMAGE ID       CREATED         SIZE
-  archrockfish/nanopolish                  0.13.3            0375e5f8a31d   4 minutes ago   1.96GB
+  archcluster one/nanopolish                  0.13.3            0375e5f8a31d   4 minutes ago   1.96GB
 
 8. Push an image or a repository to a registry
 """"""""""""""""""""""""""""""""""""""""""""""
@@ -349,8 +349,8 @@ First, start a container (``step 5``), or keep the container running (``step 4``
 
 .. code-block:: console
 
-  [userid@local ~]$ docker push archrockfish/nanopolish:0.13.3
-  The push refers to repository [docker.io/archrockfish/nanopolish]
+  [userid@local ~]$ docker push archcluster one/nanopolish:0.13.3
+  The push refers to repository [docker.io/archcluster one/nanopolish]
   ee33934ad57b: Layer already exists
   ...
   ...
@@ -361,17 +361,17 @@ First, start a container (``step 5``), or keep the container running (``step 4``
 
   **Usage** : $ singularity pull [pull options...] [output file] <URI>
 
-The last step you will be able to create a singularity container on Rockfish cluster.
+The last step you will be able to create a singularity container on Cluster One cluster.
 
 .. tip::
   Root users can use a ``build`` option, instead of ``pull`` command.
 
-  $ sudo singularity build nanopolish.sif docker://archrockfish/nanopolish:0.13.3
+  $ sudo singularity build nanopolish.sif docker://archcluster one/nanopolish:0.13.3
 
 .. code-block:: console
 
   [userid@login03 ~]$ interact -c 2 -t 120
-  [userid@c011 ~]$ sudo singularity build nanopolish.sif docker://archrockfish/nanopolish:0.13.3
+  [userid@c011 ~]$ sudo singularity build nanopolish.sif docker://archcluster one/nanopolish:0.13.3
 
 .. warning::
   You need to create a repository and assign who are the `contributors`_ with permission to upload an image to this repository, before tag an image referenced by ID (``step 3``).

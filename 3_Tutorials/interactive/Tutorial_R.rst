@@ -2,7 +2,7 @@
 R & RStudio
 ==============================
 
-Rockfish offers **two complementary ways** of working with R:
+Cluster One offers **two complementary ways** of working with R:
 
 * **RStudio Server** – a full-featured IDE you open in a web browser.  
 * **Command-line R** – run R scripts or an interactive `R` prompt from the
@@ -26,8 +26,8 @@ inside the cluster – choose whichever matches your workflow.
 ***********************************************
 
 1. **Connect to the Hopkins VPN** – the portal is JHU-internal.  
-2. Open your browser and go to `https://portal.rockfish.jhu.edu`.  
-3. Log in with your **Rockfish** credentials.  
+2. Open your browser and go to `https://portal.cluster one.jhu.edu`.  
+3. Log in with your **Cluster One** credentials.  
 4. On the dashboard click **RStudio Server**.  
 5. Fill in the resource form:  
 
@@ -49,8 +49,8 @@ larger workflow?  Use `r-studio-server.sh`:
 
 .. code-block:: bash
 
-   # 1  SSH to Rockfish
-   ssh <YourUserID>@login.rockfish.jhu.edu
+   # 1  SSH to Cluster One
+   ssh <YourUserID>@login.cluster one.jhu.edu
 
    # 2  Generate a Slurm batch script
    r-studio-server.sh -n 1 -c 2 -m 8G -t 4:00:00 -p defq -e <you>@jhu.edu
@@ -63,7 +63,7 @@ larger workflow?  Use `r-studio-server.sh`:
    cat rstudio-server.job.<JOBID>.out
 
    # 5  On *your laptop* create the SSH tunnel it shows
-   ssh -N -L 8787:node123:8787  <YourUserID>@login.rockfish.jhu.edu
+   ssh -N -L 8787:node123:8787  <YourUserID>@login.cluster one.jhu.edu
 
    # 6  Open http://localhost:8787  →  RStudio Server
 
@@ -105,7 +105,7 @@ Parameter reference
 Partition cheatsheet
 --------------------
 
-For available partitions, see: :doc:`../../1_Clusters/Rockfish/3_Slurm/Partitions`
+For available partitions, see: :doc:`../../1_Clusters/Cluster One/3_Slurm/Partitions`
 
 
 Helper-script output files
@@ -145,7 +145,7 @@ Load the desired module, e.g.:
 2.1  Loading R modules
 **********************
 
-Rockfish’s **default R** is currently **4.4.1**.  
+Cluster One’s **default R** is currently **4.4.1**.  
 Load a different version with the module system:
 
 .. code-block:: bash
@@ -243,6 +243,6 @@ when your Slurm job starts.
 * **Package installs fail with permissions errors** – set
   ``R_LIBS_USER`` to a directory **you** own (e.g. `~/rlibs/R-4.4.1`).
 * **Need GPU-accelerated R** – load ``cuda``/``a100`` modules and see
-  the Rockfish *GPU guide* for Slurm flags.
+  the Cluster One *GPU guide* for Slurm flags.
 
-Questions?  E-mail **help@rockfish.jhu.edu**.
+Questions?  E-mail **help@cluster one.jhu.edu**.

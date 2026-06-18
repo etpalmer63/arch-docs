@@ -1,22 +1,22 @@
 Vscode
 ################################
 
-Accessing VS Code on Rockfish
+Accessing VS Code on Cluster One
 ==============================
 
-You can access Visual Studio Code on Rockfish in two ways:
+You can access Visual Studio Code on Cluster One in two ways:
 
 Using Open OnDemand (Web Portal)
 ================================
 
 1. Connect to the Hopkins VPN  
-   Rockfish’s Open OnDemand (OOD) is only accessible within the JHU network.
+   Cluster One’s Open OnDemand (OOD) is only accessible within the JHU network.
 
 2. Open the portal  
-   Go to: https://portal.rockfish.jhu.edu
+   Go to: https://portal.cluster one.jhu.edu
 
 3. Login  
-   Use your Rockfish credentials.
+   Use your Cluster One credentials.
 
 4. Launch VS Code  
    - On the dashboard, click "VSCode Server IDE/Editor"  
@@ -31,7 +31,7 @@ Using ``vscode-server.sh`` on the Command Line
 
 This method is great for advanced users who prefer working directly via Slurm.
 
-Connect to Rockfish (login node)
+Connect to Cluster One (login node)
 --------------------------------
 
 Create the Slurm script  
@@ -73,10 +73,10 @@ Create the SSH tunnel (from your local machine)
 
 .. code-block:: bash
 
-   ssh -N -L <local_port>:localhost:<remote_port> <your_user>@rockfish.jhu.edu
+   ssh -N -L <local_port>:localhost:<remote_port> <your_user>@cluster one.jhu.edu
 
 - Paste the full command from the ``.out`` file  
-- Enter your Rockfish password when prompted  
+- Enter your Cluster One password when prompted  
 - Leave this terminal open (minimized is fine)
 
 Open VS Code in your browser  

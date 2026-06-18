@@ -4,7 +4,7 @@ Matlab Parallel Server
 Introduction
 ============
 
-MATLAB Parallel Server allows you to run parallel jobs efficiently on Rockfish by using a cluster profile that integrates with SLURM. This approach avoids requesting a separate MATLAB license for each ``parpool`` or ``parfor`` call and improves resource utilization.
+MATLAB Parallel Server allows you to run parallel jobs efficiently on Cluster One by using a cluster profile that integrates with SLURM. This approach avoids requesting a separate MATLAB license for each ``parpool`` or ``parfor`` call and improves resource utilization.
 
 Create a Cluster Profile
 ========================
@@ -41,7 +41,7 @@ Option: Create Profile via Command Line
 
       configCluster;
 
-   This creates a cluster profile named ``rockfish``.
+   This creates a cluster profile named ``cluster one``.
 
 5. Exit MATLAB:
 
@@ -67,7 +67,7 @@ Example: ``test_matlab_parallel.m``
    % test_matlab_parallel.m
 
    % Load the cluster profile
-   rf = parcluster('rockfish');
+   rf = parcluster('cluster one');
 
    % Set SLURM resource parameters
    rf.AdditionalProperties.Partition = 'parallel';  % Specify partition

@@ -7,7 +7,7 @@ Frequently Asked Questions
 
 .. dropdown:: What type of data can I upload ARCH systems?
 
-   Data subject to restrictions - including but not limited to, HIPAA, PHI, or CUI is **not permitted** on DSAI.  
+   Data subject to restrictions - including but not limited to, HIPAA, PHI, or CUI is **not permitted** on Cluster One.  
    If your research involves an IRB and the data is de-identified, please reach out to  
    `help@arch.jhu.edu <mailto:help@arch.jhu.edu>`__ for further guidance, prior to storing or processing any data.
 
@@ -17,25 +17,17 @@ Frequently Asked Questions
 
    .. code-block:: console
 
-      ssh -XY <your_jhed>@login.rockfish.jhu.edu (for Rockfish)
-      ssh -XY <your_jhed>@dsailogin.arch.jhu.edu (for DSAI)
+      ssh -XY <your_jhed>@login.clusterone.arch.jhu.edu
 
 .. dropdown:: What default resources do I receive?
 
-   On Rockfish, each user/group receives:
-   
-   - 50GB `/home/` directory
-   - 10TB group allocation on `/data/`
-   - 1TB group allocation on `/scratch4/`
-   - /scratch16/ access available upon request
+   TODO: Each user/group receives
 
 .. dropdown:: How do I request an allocation?
 
-   PIs must submit a short proposal through the Coldfront Portal.  
-   Allocations are available for standard, GPU, and large-memory usage.  
-   Startup allocations are also available for benchmarking.
-   For Rockfish, visit the `Allocations page for Rockfish <../1_Clusters/Rockfish/1_Resources/Allocation>`__.
-   For DSAI, visit the `Allocations page for DSAI <../1_Clusters/DSAI/1_Resources/Allocation>`__.
+   PIs must submit a short proposal through the Arch Portal.  
+   TODO: Allocations are available for standard, GPU, and large-memory usage.  
+   For more information, visit :doc:`Accounting portal <../1_Clusters/Cluster_One/4_Arch_Portal/index>`.
 
 .. dropdown:: How can I request a piece of software or feature become available?
 
@@ -87,15 +79,10 @@ Frequently Asked Questions
    .. note::
       Jobstats is only available for GPU jobs.
 
-.. dropdown:: How do I transfer large datasets?
+.. dropdown:: How do I download large datasets?
 
    Use Globus to transfer data.  
    For large numbers of small files, compress them into tarballs first:
-
-   For more information on using Globus, visit the 
-   
-   - :doc:`File Transfers for Rockfish <../1_Clusters/Rockfish/2_Navigating/File_Transfers>`
-   - :doc:`File Transfers for DSAI <../1_Clusters/DSAI/2_Navigating/File_Transfers>`
 
    .. code-block:: console
 
@@ -103,10 +90,4 @@ Frequently Asked Questions
 
 .. dropdown:: How do I use FileZilla?
 
-   - Host: `rfdtn1.rockfish.jhu.edu`
-   - Port: `22`
-   - Protocol: `SFTP – SSH File Transfer Protocol`
-   - Login Type: `Interactive`
-   - Limit simultaneous transfers to **1** in Transfer Settings
-
-   Your Rockfish username should be used for login (e.g., `jdoe1234`).
+   TODO

@@ -1,16 +1,16 @@
 Link Conda to Jupyter
 #####################
 
-This guide explains how to link your **Conda environment** — whether it's Python or R — to **JupyterLab** on Rockfish.
+This guide explains how to link your **Conda environment** — whether it's Python or R — to **JupyterLab** on Cluster One.
 
-Connect to Rockfish
-*******************
+Connect to Cluster One
+**************************
 
 Open a terminal and connect:
 
 .. code-block:: bash
 
-   ssh YourUserID@login.rockfish.jhu.edu
+   ssh YourUserID@login.cluster one.jhu.edu
 
 Start an Interactive Session (Compute Node)
 *******************************************
@@ -95,7 +95,7 @@ Exit the Compute Node
 You're All Set!
 ***************
 
-The next time you launch **JupyterLab** on Rockfish, your kernel(s) will be available as options:
+The next time you launch **JupyterLab** on Cluster One, your kernel(s) will be available as options:
 
 - ➡️ **Python - my_env**
 - ➡️ **R - my_env**

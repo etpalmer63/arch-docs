@@ -11,7 +11,7 @@ Below is a suggested acknowledgment. Feel free to modify it to fit your specific
 .. note::
 
    This work was carried out at the **Advanced Research Computing at Hopkins (ARCH)** core facility  
-   (`rockfish.jhu.edu <https://rockfish.jhu.edu>`_), which is supported by the National Science Foundation (NSF)  
+   (`cluster one.jhu.edu <https://cluster one.jhu.edu>`_), which is supported by the National Science Foundation (NSF)  
    grant number **OAC1920103**.
 
 If your work was supported by other funding agencies or grant programs, please include those as well.

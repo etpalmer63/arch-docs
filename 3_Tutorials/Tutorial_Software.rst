@@ -4,7 +4,7 @@ Managing Software Using Lmod
 Overview
 ********
 
-Rockfish uses **Lmod** (Lua-based environment modules) to manage a wide variety of scientific software packages. Lmod allows users to dynamically modify their environment (e.g., `PATH`, `LD_LIBRARY_PATH`) by loading or unloading software modules, and supports hierarchical environments based on compilers, MPI stacks, and more.
+Cluster One uses **Lmod** (Lua-based environment modules) to manage a wide variety of scientific software packages. Lmod allows users to dynamically modify their environment (e.g., `PATH`, `LD_LIBRARY_PATH`) by loading or unloading software modules, and supports hierarchical environments based on compilers, MPI stacks, and more.
 
 Current Lmod version: **8.7.24**
 
@@ -16,10 +16,10 @@ Common software categories include:
 * **Numerical libraries** — MKL, OpenBLAS, FFTW, HDF5
 * **Commercial software** — MATLAB, COMSOL, ABINIT, TotalView
 
-Module Hierarchy on Rockfish
+Module Hierarchy on Cluster One
 *****************************
 
-Lmod on Rockfish uses a **hierarchical module system**, organized by compiler and MPI stacks. The module paths include:
+Lmod on Cluster One uses a **hierarchical module system**, organized by compiler and MPI stacks. The module paths include:
 
 .. code-block:: bash
 

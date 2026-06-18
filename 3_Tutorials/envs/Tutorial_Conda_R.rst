@@ -1,18 +1,18 @@
 Conda R
 #######
 
-This tutorial guides you through creating and using your own **Conda environment with R** on Rockfish.
+This tutorial guides you through creating and using your own **Conda environment with R** on Cluster One.
 
-Connect to Rockfish (Login Node)
+Connect to Cluster One (Login Node)
 ********************************
 
 Open a terminal and run:
 
 .. code-block:: bash
 
-   ssh YourUserID@login.rockfish.jhu.edu
+   ssh YourUserID@login.cluster one.jhu.edu
 
-Enter your Rockfish password when prompted.
+Enter your Cluster One password when prompted.
 
 .. warning::
 

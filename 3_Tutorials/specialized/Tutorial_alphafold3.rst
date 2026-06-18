@@ -1,7 +1,7 @@
 AlphaFold3
 ###########
 
-AlphaFold3 is available on Rockfish as a two-stage workflow that combines CPU-based preprocessing and GPU-based inference. This guide will walk you through accessing the module, running jobs, and preparing batch or interactive sessions.
+AlphaFold3 is available on Cluster One as a two-stage workflow that combines CPU-based preprocessing and GPU-based inference. This guide will walk you through accessing the module, running jobs, and preparing batch or interactive sessions.
 
 Accessing AlphaFold3
 *********************

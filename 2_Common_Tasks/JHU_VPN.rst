@@ -1,7 +1,7 @@
 Connecting to the JHU VPN
 ###########################
 
-To access Open OnDemand or other internal Rockfish services from off campus, you must first connect to the **Johns Hopkins VPN** using the **Ivanti Pulse Secure** client.
+To access Open OnDemand or other internal Cluster One services from off campus, you must first connect to the **Johns Hopkins VPN** using the **Ivanti Pulse Secure** client.
 
 This guide will walk you through the setup process.
 

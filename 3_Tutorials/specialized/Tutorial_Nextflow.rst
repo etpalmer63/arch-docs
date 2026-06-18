@@ -1,7 +1,7 @@
 Nextflow
 ##################################
 
-This tutorial walks you through setting up **Nextflow**, writing a small test pipeline, and running it using a SLURM job on Rockfish.
+This tutorial walks you through setting up **Nextflow**, writing a small test pipeline, and running it using a SLURM job on Cluster One.
 
 Install and Set Up Nextflow
 ***********************************
