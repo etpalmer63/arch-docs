@@ -527,6 +527,16 @@ Requests are reviewed by staff.
 When an account is upgraded from User to PI, a default project is created and associated with
 the requesting PI.
 
+.. mermaid::
+
+   flowchart LR
+       A["Activate user\n account"] --> B["Request\n promotion to PI"]
+       B --- C["Approval \n received"]
+       C --> D["Default project\n and allocation granted, \n system access available"]
+
+       style C stroke-dasharray: 2
+
+
 To request an account upgrade to PI:
 
 1. In the Arch Portal, click on the dropdown menu in the upper right next to the username and icon. Select
