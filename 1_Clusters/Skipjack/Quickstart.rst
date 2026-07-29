@@ -527,14 +527,7 @@ Requests are reviewed by staff.
 When an account is upgraded from User to PI, a default project is created and associated with
 the requesting PI.
 
-.. mermaid::
-
-   flowchart LR
-       A["Activate user\n account"] --> B["Request\n promotion to PI"]
-       B --- C["Approval \n received"]
-       C --> D["Default project\n and allocation granted, \n system access available"]
-
-       style C stroke-dasharray: 2
+.. image:: images/pi-flowchart.png
 
 
 To request an account upgrade to PI:
@@ -566,6 +559,10 @@ will remain in the pending state until it is approved.
 |
 
 ----
+
+PIs who want to add additional projects and allocations can do so by following the steps below.
+
+.. image:: images/pi-add-project-flowchart.png
 
 
 Add a Cost Center
@@ -750,6 +747,25 @@ Assign Proxy Account Managers
 change.
 
    .. image:: images/proj-user-role-confirm.png
+
+|
+|
+
+----
+
+Non-PI Users
+############
+
+Once a non-PI user activates an account, they will need to be added to a project to by a PI or a
+proxy account manager to gain access to the system. To run jobs, the non-PI user must be added to
+an allocation.
+
+.. image:: images/user-flowchart.png
+
+|
+|
+
+----
 
 
 Frequently Asked Questions
